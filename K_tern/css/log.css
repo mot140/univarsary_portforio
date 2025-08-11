@@ -1,0 +1,64 @@
+/*log.htmlに対するcssファイル*/
+ul{
+    /*footer内の要素を横並びにする*/
+    display: flex;
+}
+.footer_log{
+    /*footer内の立て並びの部分*/
+    display:block
+}
+body{
+    /*全体の背景*/
+    background-color:#F6C6AD;
+    /*htmlにおける空白を無くす処理*/
+    margin:0px;
+}
+footer{
+    /*footerの幅*/
+    width: 100%;
+    /*footer要素の背景*/
+    background-color:#156082 ;
+    /*ポジションを固定させる動作*/
+    position: absolute;
+    /*一番下に*/
+    bottom: 0; 
+}
+h1{
+    /*h1要素の幅*/
+    width: 50%;
+    /*テキスト位置*/
+    text-align: center;
+    /*太文字*/
+    font-weight: bold;
+    /*フォントサイズ*/
+    font-size:300%;
+}
+h3{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 200%;
+    /*空白の削除*/
+    margin-bottom: 0px;
+}
+h4{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 120%;
+    /*空白の削除*/
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+p{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 120%;
+    /*空白の削除*/
+    margin-top:0px;
+}
+.card{
+    margin-left:auto;
+    margin-right: auto;
+}

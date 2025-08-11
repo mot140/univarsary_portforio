@@ -3,18 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>ログインページ</title>
+        <link rel="stylesheet" href="../css/log.css">
     </head>
     <body>
-        <form action ="" method="post" accept-charset="utf-8">
-            <label id = "la">ログインID<br>
-            <input type = "text" name ="id" /></label><br>
-            <label id = "la">パスワード<br>
-            <input type = "password" name ="password" /></label><br>
-            <input type = "submit" value = "ログイン"/>
+        <div class ="card">
+            <form action ="" method="post" accept-charset="utf-8">
+                <label id = "la">ログインID<br>
+                <input type = "text" name ="id" /></label><br>
+                <label id = "la">パスワード<br>
+                <input type = "password" name ="password" /></label><br>
+                <input type = "submit" value = "ログイン"/>
+            <button type="button" id = "camera">バーコードで読み込む場合</button>
         </form>
-        <button type="button" id = "camera">バーコードで読み込む場合</button>
+        
+        </div>
+        
         <footer>
-            
+            <ul>
+                <h1>ポートフォリオ大学</h1>
+                <div class = "footer_log">
+                    <h3>問い合わせ</h3>
+                    <h4>ポートフォリオ大学 学生支援課</h4>
+                    <p>TEL:XXX-XXXX-XXXX</p>
+                </div>
+            </ul>
         </footer>
     </body>
 </html>
