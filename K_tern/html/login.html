@@ -2,6 +2,7 @@
 <html lang ="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ログインページ</title>
         <link rel="stylesheet" href="../css/log.css">
     </head>
@@ -9,13 +10,12 @@
         <div class ="card">
             <form action ="" method="post" accept-charset="utf-8">
                 <label id = "la">ログインID<br>
-                <input type = "text" name ="id" /></label><br>
+                <input type = "text" name ="id" id = "text_b"/></label><br>
                 <label id = "la">パスワード<br>
-                <input type = "password" name ="password" /></label><br>
+                <input type = "password" name ="password" id =txt_b /></label><br>
                 <input type = "submit" value = "ログイン"/>
-            <button type="button" id = "camera">バーコードで読み込む場合</button>
-        </form>
-        
+                <button type="button" id = "camera">バーコードで読み込む場合</button>
+            </form>
         </div>
         
         <footer>

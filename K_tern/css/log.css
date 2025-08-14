@@ -58,12 +58,40 @@ p{
     /*空白の削除*/
     margin-top:0px;
 }
-.card{
-    position:absolute;
+/*.card{
+    text-align: center;
     height:200px;
-    top:25%;
-    left:50%;
-}
+    margin-top:10%;
+}*/
 label{
-    font-size: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+form{
+    position:absolute ;
+    /*フォームの高さ*/
+    top:30%;
+    /*フォームの左位置*/
+    left: 30%;
+    /*フォームの幅*/
+    width: 500px;
+}
+input[type="text"], input[type="password"]{
+    /*テキストボックスの幅*/
+    width: 50%;
+    /*テキストボックスの高さ*/
+    height: 30px;
+    /*テキストボックスの余白*/
+    margin-bottom: 10px;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+#la{
+    /*ラベルの幅*/
+    width: 20%;
+    /*ラベルの位置*/
+    text-align: left;
+}
+.card{
+    position: relative;
 }
