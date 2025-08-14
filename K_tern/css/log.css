@@ -59,6 +59,11 @@ p{
     margin-top:0px;
 }
 .card{
-    margin-left:auto;
-    margin-right: auto;
+    position:absolute;
+    height:200px;
+    top:25%;
+    left:50%;
+}
+label{
+    font-size: 30px;
 }
