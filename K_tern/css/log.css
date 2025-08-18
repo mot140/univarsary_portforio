@@ -5,23 +5,33 @@ ul{
 }
 .footer_log{
     /*footer内の立て並びの部分*/
-    display:block
+    display:block;
+}
+html{
+    margin:0px;
+    padding: 0px;
 }
 body{
     /*全体の背景*/
     background-color:#F6C6AD;
     /*htmlにおける空白を無くす処理*/
     margin:0px;
+    padding:0px /* footerの高さ分 */
 }
 footer{
     /*footerの幅*/
     width: 100%;
+    max-height:200px;
     /*footer要素の背景*/
     background-color:#156082 ;
     /*ポジションを固定させる動作*/
-    position: absolute;
+    position: fixed;
     /*一番下に*/
     bottom: 0; 
+    margin:0px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    height:100%;
 }
 h1{
     /*h1要素の幅*/
@@ -58,40 +68,111 @@ p{
     /*空白の削除*/
     margin-top:0px;
 }
-/*.card{
-    text-align: center;
-    height:200px;
-    margin-top:10%;
-}*/
+
 label{
     font-size: 20px;
     text-align: left;
 }
-form{
-    position:absolute ;
-    /*フォームの高さ*/
-    top:30%;
-    /*フォームの左位置*/
-    left: 30%;
-    /*フォームの幅*/
-    width: 500px;
+form {
+    position: relative;
+    width: 90%;         
+    /* 画面の90%の幅 */
+    max-width: 500px;   
+    /* 最大500pxまで広がる */
+    margin: 50px auto; 
+     /* 横中央寄せ */
 }
+
+
+
 input[type="text"], input[type="password"]{
+    
     /*テキストボックスの幅*/
+    width: 50%;
+    max-width:400px;
+    /*テキストボックスの高さ*/
+    height: 30px;
+    /*テキストボックスの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+
+#la{
     width: 50%;
     /*テキストボックスの高さ*/
     height: 30px;
     /*テキストボックスの余白*/
-    margin-bottom: 10px;
+    margin:10px 30% 10px 20%;
     /*フォントサイズ*/
     font-size: 20px;
 }
-#la{
-    /*ラベルの幅*/
-    width: 20%;
-    /*ラベルの位置*/
-    text-align: left;
+input[type="submit"]{
+    /*ボタンの幅*/
+    width: 50%;
+    /*ボタンの高さ*/
+    height: 30px;
+    /*ボタンの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
 }
-.card{
-    position: relative;
+button{
+    /*ボタンの幅*/
+    width: 50%;
+    /*ボタンの高さ*/
+    height: 30px;
+    /*ボタンの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+a {
+    /*リンクの幅*/
+    width: 50%;
+    /*リンクの高さ*/
+    height: 30px;
+    /*リンクの余白*/
+    margin:10px 20% 10px 20%;
+    /*フォントサイズ*/
+    font-size: 18px;
+    /*テキストの装飾を無くす*/
+    text-decoration: none;
+}
+
+@media (max-width: 905px) {
+    form {
+        position: relative;
+        width: 90%;         
+        /* 画面の90%の幅 */
+        max-width: 500px;   
+        /* 最大500pxまで広がる */
+        margin: 50px auto; 
+        /* 横中央寄せ */
+        margin-top:25%;
+       
+    }
+    ul {
+        flex-wrap: wrap;   /* 要素を改行して並べる */
+        margin:0px
+    }
+    footer {
+        position: fixed;  /* 中身に応じて下に流れる */
+        max-height: none;
+        height: auto;
+        bottom:0;
+        width:100%;
+    }
+    h1{
+        text-align: left;;
+        font-size:130%;
+    }
+    h3 {
+        text-align: left;
+        font-size: 120%;
+    }
+    h4{
+        text-align: left;
+        font-size: 100%;
+    }
 }
