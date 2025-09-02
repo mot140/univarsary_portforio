@@ -1,0 +1,209 @@
+<html lang="ja">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="generator" content ={Astro.generator}/>
+		<link rel = "icon" type="image/svg+xml" href = "/favicon.svg"/>
+		<title>ポートフォリオ大学（ログインページ）</title>
+	</head>
+	<body>
+		<form action ="" method="post" accept-charset="utf-8">
+            <label id = "la">ログインID<br>
+            <input type = "text" name ="id" id = "text_b"/></label><br>
+            <label id = "la">パスワード<br>
+            <input type = "password" name ="password" id =txt_b /></label><br>
+            <input type = "submit" value = "ログイン"/>
+            <a href ="log_camera.html">バーコードで読み込む場合はこちら</a>
+        </form>        
+        <footer>
+            <ul>
+                <h1>ポートフォリオ大学</h1>
+                <div class = "footer_log">
+                    <h3>問い合わせ</h3>
+                    <h4>ポートフォリオ大学 学生支援課</h4>
+                    <p>TEL:XXX-XXXX-XXXX</p>
+                </div>
+            </ul>
+        </footer>
+	</body>
+</html>
+<style>
+	/*log.htmlに対するcssファイル*/
+ul{
+    /*footer内の要素を横並びにする*/
+    display: flex;
+}
+.footer_log{
+    /*footer内の立て並びの部分*/
+    display:block;
+}
+html{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    /*全体の背景*/
+    background-color:#F6C6AD;
+    /*htmlにおける空白を無くす処理*/
+    margin:0px;
+    padding:0px /* footerの高さ分 */
+}
+footer{
+    /*footerの幅*/
+    width: 100%;
+    max-height:200px;
+    /*footer要素の背景*/
+    background-color:#156082 ;
+    /*ポジションを固定させる動作*/
+    position: fixed;
+    /*一番下に*/
+    bottom: 0; 
+    margin:0px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    height:100%;
+}
+h1{
+    /*h1要素の幅*/
+    width: 50%;
+    /*テキスト位置*/
+    text-align: center;
+    /*太文字*/
+    font-weight: bold;
+    /*フォントサイズ*/
+    font-size:300%;
+}
+h3{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 200%;
+    /*空白の削除*/
+    margin-bottom: 0px;
+}
+h4{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 120%;
+    /*空白の削除*/
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+p{
+    /*テキストの位置*/
+    text-align: left;
+    /*フォントサイズ*/
+    font-size: 120%;
+    /*空白の削除*/
+    margin-top:0px;
+}
+
+label{
+    font-size: 20px;
+    text-align: left;
+}
+form {
+    position: relative;
+    width: 90%;         
+    /* 画面の90%の幅 */
+    max-width: 500px;   
+    /* 最大500pxまで広がる */
+    margin: 50px auto; 
+     /* 横中央寄せ */
+}
+
+
+
+input[type="text"], input[type="password"]{
+    
+    /*テキストボックスの幅*/
+    width: 50%;
+    max-width:400px;
+    /*テキストボックスの高さ*/
+    height: 30px;
+    /*テキストボックスの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+
+#la{
+    width: 50%;
+    /*テキストボックスの高さ*/
+    height: 30px;
+    /*テキストボックスの余白*/
+    margin:10px 30% 10px 20%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+input[type="submit"]{
+    /*ボタンの幅*/
+    width: 50%;
+    /*ボタンの高さ*/
+    height: 30px;
+    /*ボタンの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+button{
+    /*ボタンの幅*/
+    width: 50%;
+    /*ボタンの高さ*/
+    height: 30px;
+    /*ボタンの余白*/
+    margin:10px 25% 10px 25%;
+    /*フォントサイズ*/
+    font-size: 20px;
+}
+a {
+    /*リンクの幅*/
+    width: 50%;
+    /*リンクの高さ*/
+    height: 30px;
+    /*リンクの余白*/
+    margin:10px 20% 10px 20%;
+    /*フォントサイズ*/
+    font-size: 18px;
+    /*テキストの装飾を無くす*/
+    text-decoration: none;
+}
+
+@media (max-width: 905px) {
+    form {
+        position: relative;
+        width: 90%;         
+        /* 画面の90%の幅 */
+        max-width: 500px;   
+        /* 最大500pxまで広がる */
+        margin: 50px auto; 
+        /* 横中央寄せ */
+        margin-top:25%;
+       
+    }
+    ul {
+        flex-wrap: wrap;   /* 要素を改行して並べる */
+        margin:0px
+    }
+    footer {
+        position: fixed;  /* 中身に応じて下に流れる */
+        max-height: none;
+        height: auto;
+        bottom:0;
+        width:100%;
+    }
+    h1{
+        text-align: left;;
+        font-size:130%;
+    }
+    h3 {
+        text-align: left;
+        font-size: 120%;
+    }
+    h4{
+        text-align: left;
+        font-size: 100%;
+    }
+}
+</style>
