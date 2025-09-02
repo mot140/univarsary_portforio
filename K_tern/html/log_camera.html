@@ -3,9 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ログインページ</title>
+        <title>ログインページ（カメラでログイン）</title>
         <link rel="stylesheet" href="../css/log.css">
     </head>
     <body>
-        
+        <h1>カメラでログイン</h1>
+        <video id="video" width="320" height="240" autoplay></video>
+        <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+        <p id="result">バーコードをスキャンしてください</p>
+        <script src="../js/log_camera.js"></script>
     </body>
+    </html>
