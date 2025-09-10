@@ -74,4 +74,3 @@ async def main():
     for user in users:
         print(f'User ID: {user.user_id}, User Name: {user.user_name}')
 
-asyncio.run(main())
