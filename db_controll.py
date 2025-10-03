@@ -34,10 +34,4 @@ class db_cont:
         result = cursor.fetchall()
         cursor.close()
         conn.close()  # ✅ 接続も忘れずに閉じる
-        print(result)
-query="SELECT * FROM login WHERE unv_mail=%s"
-params=("yamada@univ.jp",)
-
-db_cont.select(query,params)
-
-db_table.create_tables()
+        return result

@@ -1,10 +1,11 @@
 
 from fastapi import FastAPI, Request, Form
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse,RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from back.api_class import test
 import requests, json
+from clas import category
 
 app = FastAPI()
 user = "Mt"
@@ -24,4 +25,14 @@ async def read_root(request: Request):
 @app.get("/risy", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("risy.html", {"request": request,"user":user})
+
+@app.post("/login")
+async def login(id: str = Form(...), password: str = Form(...)):
+    result=category.log(id,password)
+    print(result)
+    if result == 0:
+        return RedirectResponse(url="/HOME", status_code=303) 
+    else:
+        return RedirectResponse(url="/", status_code=303) 
+
 
