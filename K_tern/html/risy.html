@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>ようこそ</title>
-    <link rel="stylesheet" href="/K_tern/css/sideber.css">
-    <link rel="stylesheet" href="/K_tern/css/risy.css">
-    <link rel="stylesheet" href="/K_tern/css/top.css">
+    <link rel="stylesheet" href="/css/sideber.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/top.css">
+    <link rel="stylesheet" href="/css/risy.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
         </div>
 
     <div class="sidebar">
-        <header>さん、こんにちは！</header>
+        <header>{{user}}さん、こんにちは！</header>
         <ul>
         <li><a href="/HOME">ホーム</a></li>
         <li><a href="/risy">履修登録</a></li>
@@ -30,10 +31,248 @@
         <li><a href="/question">課題</a></li>
         </ul>
     </div>
+    <div class="main-content">
+        <div class = "header">
+            <!--日付--><!--名前-->
+            <h6>2025/9/15<br>ポートフォリオ 太郎様</h6>
+            <h1>ポートフォリオ大学</h1>
+    </div>
+    <h2>こんにちは！！○○さん！</h2>
     <table class = "main-table">
         <th>履修登録</th>
         <tr>
-            <td>履修登録画面です</td>
+            <td class="table-td">履修登録画面です</td>
+        </tr>
+    </table>
+    <table class = "sub-table">
+        <tr class="table-tr">
+            <td>曜日/時間</td>
+            <td>授業</td>
+        </tr>
+        <tr>
+            <td>月1</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="月1">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>月2</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="月2">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>月3</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="月3">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>月4</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="月4">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>月5</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="月5">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>火1</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="火1">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>火2</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="火2">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>火3</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="火3">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>火4</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="火4">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>火5</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="火5">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>水１</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="水１">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>水2</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="水2">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>水3</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="水3">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>水4</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="水4">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>水5</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="水5">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>木1</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="木1">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>木2</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="木2">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>木3</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="木3">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>木4</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="木4">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>木5</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="木5">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>金1</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="金1">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>金2</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="金2">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>金3</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="金3">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>金4</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="金4">
+                <button type="submit">登録</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>金5</td>
+            <td>
+                <form action="/risy/sent" method="post">
+                <input type="hidden" name="id" value="金5">
+                <button type="submit">登録</button>
+                </form>
+            </td>
         </tr>
     </table>
     </body>

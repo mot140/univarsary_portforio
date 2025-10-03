@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>ようこそ</title>
-    <link rel="stylesheet" href="/K_tern/css/sideber.css">
-    <link rel="stylesheet" href="/K_tern/css/Top.css">
+    <link rel="stylesheet" href="/css/sideber.css">
+    <link rel="stylesheet" href="/css/Top.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
@@ -73,8 +73,16 @@
                 <td class = "un_td">天気</td>
             </tr>
             <tr>
-                <td class = "un_td">9/15</td>
-                <td class = "un_td">晴れ</td>
+                <td class = "un_td">今日</td>
+                <td class = "un_td">{{ wether_today }}</td>
+            </tr>
+            <tr>
+                <td class = "un_td">明日</td>
+                <td class = "un_td">{{ weather_tomorrow }}</td>
+            </tr>
+            <tr>
+                <td class = "un_td">明後日</td>
+                <td class = "un_td">{{ weather_aftertomorrow }}</td>
             </tr>
         </table>
         <table class = "un_tab">

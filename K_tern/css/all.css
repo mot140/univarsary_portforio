@@ -1,0 +1,57 @@
+
+.header{
+    display: flex;
+}
+.header h6{
+    width: 100%;
+}
+.header h1{
+    width:100%;
+    text-align: right;
+    margin:0px;
+}
+
+body{
+    /*全体の背景*/
+    background-color:#F6C6AD;
+    /*htmlにおける空白を無くす処理*/
+    margin:0px;
+    padding:0px; /* footerの高さ分 */
+    overflow: scroll;
+    scrollbar-color: red orange;
+    scrollbar-width: thin;
+}
+html{
+    margin:0px;
+    padding: 0px;
+}
+
+
+table{
+    width:100%;
+    border-collapse: collapse; /* ← セル間の隙間をなくす */
+    border-spacing: 0; 
+}
+.box1{
+    width: 33%;
+    margin:10px;
+    font-size:30px;
+}
+td{
+    border:1px solid black;
+    padding:0px;
+    margin:20px;
+    border-spacing: 0;
+}
+.tab_under{
+    text-align: center;
+    display:flex;
+}
+.un_td{
+    margin:0px;
+    padding:0px;
+}
+th{
+    text-align: center;
+    padding: 0px;
+}

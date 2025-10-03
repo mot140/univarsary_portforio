@@ -1,3 +1,27 @@
 .main-table {
+    margin-top:30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.sub-table {
     padding-top: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+
+
+}
+.table-tr{
+    background-color: blue;
+    color:white;
+}
+
+
+.main-table td{
+    text-align: center;
+    color: black;
+    background-color: white;
 }
