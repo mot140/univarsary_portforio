@@ -18,7 +18,7 @@
         </div>
 
     <div class="sidebar">
-        <header>さん、こんにちは！</header>
+        <header>{{user}}さん、こんにちは！</header>
         <ul>
         <li><a href="/HOME">ホーム</a></li>
         <li><a href="/risy">履修登録</a></li>
@@ -33,10 +33,10 @@
     <div class="main-content">
         <div class = "header">
             <!--日付--><!--名前-->
-            <h6>2025/9/15<br>ポートフォリオ 太郎様</h6>
+            <h6>{{date}}<br>{{user}}様</h6>
             <h1>ポートフォリオ大学</h1>
     </div>
-    <h2>こんにちは！！○○さん！</h2>
+    <h2>こんにちは！！{{user}}さん！</h2>
     <div class = "main-box">
         <div class = "contener">
             <div class = "box1">
@@ -59,7 +59,7 @@
                 <table>
                     <th>今後の予定</th>
                     <tr>
-                        <td>授業はありません</td>
+                        <td>{{plan}}</td>
                     </tr>
                 </table>
             </div>

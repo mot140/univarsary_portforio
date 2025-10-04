@@ -5,12 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ログインページ（カメラでログイン）</title>
         <link rel="stylesheet" href="../css/log.css">
+        {% if barcode is not integer %}
+        <meta http-equiv="refresh" content="5">
+        {% endif %}
     </head>
     <body>
         <h1>カメラでログイン</h1>
-        <video id="video" width="320" height="240" autoplay></video>
-        <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
         <p id="result">バーコードをスキャンしてください</p>
-        <script src="../js/log_camera.js"></script>
+        <img src="/video" width="640" height="480">
+        <div id="confirm-area" style="margin-top: 20px;">
+            <h2>バーコード確認</h2>
+            <p id="barcode-value">{{barcode}}</p>
+            <p id="barcode-value">{{user}}</p>
+            <form action ="/login" method="post" accept-charset="utf-8">
+                <input type = "hidden" name ="id" id = "text_b" value="{{user}}"/>
+                <label id = "la">パスワード<br>
+                <input type = "password" name ="password" id =txt_b /></label><br>
+                <input type = "submit" value = "ログイン"/>
+            </form>    
+        </div>
+
     </body>
     </html>

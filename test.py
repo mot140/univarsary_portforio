@@ -2,8 +2,8 @@ import mysql.connector
 from datetime import datetime, date, time
 from secret.db_acces import connection
 # DB接続
-conn=connection
-cursor = connection.cursor()
+conn=connection()
+cursor = conn.cursor()
 
 # 1. user（親テーブル）
 users = [
@@ -23,13 +23,13 @@ for user in users:
 logids=[]
 # login挿入（取得したIDを使う）
 logins = [
-    ("yamada@univ.jp", "pass123", user_ids[0]),
-    ("sato@univ.jp", "pass456", user_ids[1]),
-    ("takahashi@univ.jp", "pass789", user_ids[2])
+    ("yamada@univ.jp", "pass123", user_ids[0],4901777410121),
+    ("sato@univ.jp", "pass456", user_ids[1],111111111111),
+    ("takahashi@univ.jp", "pass789", user_ids[2],222222222)
 ]
 cursor.executemany("""
-    INSERT IGNORE INTO login (unv_mail, password, user_id)
-    VALUES (%s, %s, %s)
+    INSERT IGNORE INTO login (unv_mail, password, user_id,barcode)
+    VALUES (%s, %s, %s,%s)
 """, logins)
 logids = [cursor.lastrowid] * len(logins)  # ただし、executemanyではlastrowidは正確に取れない
 
